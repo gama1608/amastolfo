@@ -1,0 +1,7 @@
+$myBackground: #252329;
+@mixin flexCenter {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
