@@ -1,52 +1,368 @@
-<html lang="Es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pagina creada a fin de leer cuentos de manera digital del autor Lovecraft">
-    <meta name="keywords" content="CUENTOS,LOVECRAFT,MONSTRUOS,LECTURA DIGITAL">
-    <title>P3nsam!ent0 Ink0rr3kt0</title>
-    <link rel="shortcut icon" href= "images/favicon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    
-</head>
-<STYLE>A {text-decoration: none;} </STYLE>
-<body class="bodyIndex">
-    <header class="headMix">
-        <header><div class="tituloPrincipal">P3nsam!ent0</h1></header>
-        <header><div class="tituloPrincipal2">Ink0rr3kto</h1></header>
-            <div class="container">
-                <a href="tales.html" target="_blank"><button type="button" class="btn-outline-dark btn-lg">3rr0r</button>
-                <a href="author.html" target="blank"><button type="button" class="btn-outline-dark btn-lg">Autor</button></a>
-                </div>
-    </header>
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: snow;
+  text-align: justify;
+  text-decoration: none;
+}
 
-    <main>
-        <div class="containerTales">
-            <div class="colorBoxTalesExpand">
-                <a href="tale1.html" target="_blank"><button class="readMore">La llamada de Cthulhu</button></a>
-                <img src="images/octo1.jpg" alt="pulpo" class="imgTalesExpand">
-            </div>
-            <div class="colorBoxTalesExpand">
-                <a href="tale2.html" target="_blank"><button class="readMore">Azathoth</button></a>
-                <img src="images/loner1.jpg" alt="pulpo" class="imgTalesExpand">
-            </div>
-            <div class="colorBoxTalesExpand">
-                <a href="tale3.html" target="_blank"><button class="readMore">Reanimador I: De la oscuridad</button></a>
-                <img src="images/stare1.jpg" alt="pulpo" class="imgTalesExpand">
-            </div>
-        </div>
+/* Página INDEX */
+.bodyIndex {
+  background-color: #252329;
+}
 
-    </main>
+.headMix {
+  display: block;
+}
 
- <footer>
-     <div>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram.png" alt="Instagram" class="icon"></a>
-        <!--Acá se puede cargar un número de celular para abrir un chat en WhatsApp-->
-        <a href="https://wa.me/54911XXXXXXXX"><img src="images/WhatsApp.png" alt="WhatsApp" class="icon"></a>
-     </div>
-     <p>&copy gama</p>
- </footer>
-</body>
-</html>
+.tituloPrincipal {
+  /* margin: auto; */
+  padding-top: 20px;
+  padding-bottom: 0;
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloPrincipal2 {
+  /* margin: auto; */
+  padding-top: 0;
+  padding-bottom: 80px;
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloPrincipal2:focus, .tituloPrincipal2:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+  max-width: 120vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  background-color: #f7f3eb;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.readMore {
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+  padding-top: 5vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  padding-bottom: 5vh;
+  border-radius: 14px;
+  color: #f7f3eb;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+button:focus, button:hover {
+  background-color: #f7f3eb;
+  color: black;
+}
+
+.topHeader {
+  padding-bottom: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.topMenu {
+  margin: center;
+  padding: 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  width: 120px;
+  height: 50px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 4px #504d4d;
+          box-shadow: 0px 2px 4px #504d4d;
+  background-color: #292727;
+}
+
+footer {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.icon {
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 6px;
+}
+
+.container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* FIN de Página INDEX */
+/* Página AUTOR */
+.bodyAuthor {
+  padding: 186px 92px;
+  background-image: url(images/darkForest1.jpg);
+  background-position: 0;
+  background-color: #252329;
+  padding: 50px;
+  font-weight: 300;
+}
+
+/* FIN de Página AUTOR */
+/* Página BESTIARIO */
+.bodyBestiary {
+  background-image: url(images/darkForest1.jpg);
+  background-position: 0;
+  background-color: #252329;
+  font-weight: 300;
+}
+
+.gridContainerBestiary {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.gridItemBestiary {
+  padding: 8px 8px;
+}
+
+.imgBestiary {
+  -webkit-padding-end: 12px 12px;
+          padding-inline-end: 12px 12px;
+  width: 30vw;
+  height: 40vh;
+  border-radius: 4px;
+}
+
+/* FIN de Página BESTIARIO */
+/* Página TALES EXPAND */
+.bodyTalesExpand {
+  background-color: #252329;
+}
+
+.containerTalesExpand {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 8px;
+  justify-content: center;
+}
+
+.colorBoxTalesExpand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgTalesExpand {
+  width: 100%;
+  height: auto;
+  max-width: 120vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  background-color: #f7f3eb;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+/* FIN de Página TALES EXPAND */
+/* Página TALE */
+.bodyTale {
+  background-color: #252329;
+}
+
+.containerTale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col1 {
+  padding: 18px 18px;
+  /* Gradiente oscuro a claro */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#252329), to(snow));
+  background-image: linear-gradient(#252329, snow);
+}
+
+.col2 {
+  padding: 18px 96px;
+}
+
+.col3 {
+  padding: 18px 18px;
+  /* Gradiente claro a oscuro */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(snow), to(#252329));
+  background-image: linear-gradient(snow, #252329);
+}
+
+.footerTale {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+/* FIN de Página TALE */
+/* Página de TALES */
+.bodyTales {
+  background-color: #252329;
+}
+
+.footerTales {
+  padding-top: 52px;
+}
+
+.modal {
+  --gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: var(--gap);
+  background: #252329;
+}
+
+.modalInner {
+  background: snow;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.modalTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: silver;
+}
+
+.modalTitle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 var(--gap);
+  font-size: 20px;
+  color: #252329;
+}
+
+.modalClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: var(--gap);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.modalContent p {
+  padding: 0 var(--gap);
+  line-height: 1.5;
+  color: #252329;
+}
+
+.modalBottom {
+  text-align: right;
+  /* El orden de padding es como las agujas del reloj: Top, right, bottom, left */
+  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.modalButton {
+  display: inline-block;
+  padding: 6px 12px;
+  background: silver;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: snow;
+  cursor: pointer;
+  font: 18px;
+}
+
+.modalButton:hover {
+  background: orange;
+}
+
+/* FIN de Página de TALES */
+/*# sourceMappingURL=style.css.map */ 
