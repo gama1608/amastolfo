@@ -1,10 +1,10 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600&display=swap");
-* {
+
+*{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  color: snow;
+  color: #fffafa;
   text-align: justify;
   text-decoration: none;
 }
@@ -20,11 +20,12 @@
 
 .tituloPrincipal {
   /* margin: auto; */
+  max-width: 120vh;
   padding-top: 20px;
   padding-bottom: 0;
-  /* text-align: center; */
+    /* text-align: center; */
   font-weight: 600;
-  font-size: 120px;
+  font-size: 80px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,11 +40,12 @@
 
 .tituloPrincipal2 {
   /* margin: auto; */
+  max-width: 120vh;
   padding-top: 0;
   padding-bottom: 80px;
   /* text-align: center; */
   font-weight: 600;
-  font-size: 120px;
+  font-size: 80px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,9 +69,11 @@
   max-width: 120vh;
   padding-left: 5vh;
   padding-right: 5vh;
-  background-color: #f7f3eb;
   padding: 8px;
   border-radius: 12px;
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 6px;
 }
 
 .readMore {
@@ -99,16 +103,6 @@ button:focus, button:hover {
   color: black;
 }
 
-.topHeader {
-  padding-bottom: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 .topMenu {
   margin: center;
   padding: 10px;
@@ -128,12 +122,6 @@ footer {
   font-size: 25px;
 }
 
-.icon {
-  max-width: 32px;
-  max-height: 32px;
-  border-radius: 6px;
-}
-
 .container {
   margin: auto;
   display: -webkit-box;
@@ -147,85 +135,55 @@ footer {
           justify-content: center;
 }
 
+.containerTalesExpand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 8px;
+    justify-content: center;
+}
+  
+.colorBoxTalesExpand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+  
+.imgTalesExpand {
+    width: 100%;
+    height: auto;
+    max-width: 120vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    background-color: #f7f3eb;
+    padding: 8px;
+    border-radius: 12px;
+}
+
 /* FIN de Página INDEX */
 /* Página AUTOR */
-.bodyAuthor {
-  padding: 186px 92px;
-  background-image: url(images/darkForest1.jpg);
-  background-position: 0;
-  background-color: #252329;
-  padding: 50px;
-  font-weight: 300;
+
+.containerAuthor {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: snow;
+    text-align: justify;
+    padding: 186px 92px;   
+    background-color: #292727;
+    background-position: 0;
+    font-weight: 300;
 }
 
 /* FIN de Página AUTOR */
-/* Página BESTIARIO */
-.bodyBestiary {
-  background-image: url(images/darkForest1.jpg);
-  background-position: 0;
-  background-color: #252329;
-  font-weight: 300;
-}
 
-.gridContainerBestiary {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-}
-
-.gridItemBestiary {
-  padding: 8px 8px;
-}
-
-.imgBestiary {
-  -webkit-padding-end: 12px 12px;
-          padding-inline-end: 12px 12px;
-  width: 30vw;
-  height: 40vh;
-  border-radius: 4px;
-}
-
-/* FIN de Página BESTIARIO */
-/* Página TALES EXPAND */
-.bodyTalesExpand {
-  background-color: #252329;
-}
-
-.containerTalesExpand {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 8px;
-  justify-content: center;
-}
-
-.colorBoxTalesExpand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 12px 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.imgTalesExpand {
-  width: 100%;
-  height: auto;
-  max-width: 120vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  background-color: #f7f3eb;
-  padding: 8px;
-  border-radius: 12px;
-}
-
-/* FIN de Página TALES EXPAND */
-/* Página TALE */
+/* Página TALE para cada html generalizado */
 .bodyTale {
   background-color: #252329;
 }
@@ -263,7 +221,8 @@ footer {
   font-size: 25px;
 }
 
-/* FIN de Página TALE */
+/* FIN de Página TALE 123 */
+
 /* Página de TALES */
 .bodyTales {
   background-color: #252329;
@@ -363,6 +322,3 @@ footer {
 .modalButton:hover {
   background: orange;
 }
-
-/* FIN de Página de TALES */
-/*# sourceMappingURL=style.css.map */ 
