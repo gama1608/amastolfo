@@ -96,9 +96,6 @@
   background-color: #f7f3eb;
   padding: 8px;
   border-radius: 12px;
-  max-width: 32px;
-  max-height: 32px;
-
 }
 
 .readMore {
@@ -155,6 +152,12 @@ button:focus, button:hover {
 footer {
   font-weight: 200;
   font-size: 25px;
+}
+
+.icon {
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 6px;
 }
 
 .container {
@@ -349,31 +352,26 @@ footer {
   background: #252329;
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 480px) and (orientation: portrait){
   /* some CSS here */
   .modal {
-    width: 70vw;
-    height: 70vh;
+      width: 70vw;
+      height: 70vh;
   }
 }
-@media screen and (max-device-width: 375px) and (orientation: portrait) {
+@media screen and (max-device-width: 375px) and (orientation: portrait){
   /* some CSS here */
   .modal {
-    width: 40vw;
-    height: 50vh;
+      width: 65vw;
+      height: 50vh;
   }
 }
-
 .modalInner {
   background: snow;
   width: 100%;
   max-width: 800px;
   overflow: hidden;
   border-radius: 4px;
-}
-
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  /* some CSS here */
 }
 
 .modalTop {
