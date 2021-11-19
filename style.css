@@ -352,8 +352,15 @@ footer {
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   /* some CSS here */
   .modal {
-    width: 70vh;
+    width: 70vw;
     height: 70vh;
+  }
+}
+@media screen and (max-device-width: 375px) and (orientation: portrait) {
+  /* some CSS here */
+  .modal {
+    width: 40vw;
+    height: 50vh;
   }
 }
 
